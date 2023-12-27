@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    <fieldset form="Contato" name="inputs-contact">
+
+        <legend>Contato</legend>
+        <label for="">Nome</label>
+        <input type="text">
+
+    </fieldset>
+
+    <form action="" id="Contato">
+        <button>Submit</button>
+        
+    </form>
+    -->
+    
+    <!--
+        <input>  Atributos comuns
+
+        - autocomplete
+        - autofocus
+        - disabled
+        - readonly (quase todos)
+        - value
+        - form (quase todos)
+        - name
+        - required (quase todos)
+        - placeholder (password, search, tel, tex, url)
+
+    -->
+
+    <!--
+    <form action="">
+        <input type="password"
+            pattern="[0-9a-fA-F]{4,8}"
+            title="Coloque HEX no minimo 4 caracteres e no maximo 8 caracteres"
+            placeholder="Coloque sua senha"
+
+        >   
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    
+        Input de senhas
+
+        Atributos
+        minlength="4"
+        maxlength="8"
+        size="8"
+        pattern
+        placeholder
+        disabled
+        readonly
+        required
+        inputmode
+        autocomplete (on ou off)
+
+    -->
+    <!--
+    <form action="">
+        <input type="email"
+        required
+        >   
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+        Input de email
+
+        required
+        multiple (varios emails separado por virgula)
+        minlength / maxlength
+        size
+        pattern
+
+
+    -->
+    <!--
+    <form action="">
+        <input  type="url"
+        placeholder="http://exemple.com">
+        <button type="submit">Enviar</button>
+    </form>
+    
+    
+        Input de url
+
+        minlength / maxlength
+        required
+        size
+        pattern
+        spellcheck (verificação ortografica)
+    -->
+
+    <!--   
+    <form action="">
+        <input  type="file" method="post" enctype="multpart/form-data">
+        <button type="submit">Enviar</button>
+    </form>
+    
+    
+        Input de file
+
+        value
+        accept
+        files
+        multiple
+    -->
+    <!--
+    <fieldset>
+        <legend>Escolha seus interesses</legend>
+        <div>
+            <input type="checkbox" id="coding" name="interesse"
+            value="coding">
+            <label for="coding">Coding</label>
+        </div>
+        <div>
+            <input type="checkbox" id="music" name="interesse"
+            value="music">
+            <label for="music">Music</label>
+        </div>
+
+    </fieldset>
+
+    
+        Input de checkbox
+
+        globais
+        value
+        checked
+    
+
+    <fieldset>
+        <legend>Café ?</legend>
+
+        <label for="sim">Sim</label>
+        <input type="radio" id="sim" name="cafe"
+        value="sim">
+            
+        <label for="no">No</label> 
+        <input checked type="radio" id="no" name="cafe"
+        value="no">
+        
+        
+
+    </fieldset>
+    
+    -->
+    <!--
+    <label for="texto">
+
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+
+    </label>
+
+    
+        textarea atributos
+
+        id
+        name
+        rows e cols
+        maxlength e minlength
+        wrap
+    
+
+    <label> Esolha um pet
+        <select name="pets" multiple size="4">
+            <optgroup label="4-legged pets">
+
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+            
+            </optgroup>
+
+            <optgroup label="Flying pet">
+
+                <option value="parrot">Parrot</option>
+                <option value="macaw">Macaw</option>
+                <option value="albatross">Albatross</option>
+
+            </optgroup>
+        </select>
+    </label>
+    -->
+
+    <!--
+    <datalist id="items">
+        <option >Max</option>
+        <option >Linux</option>
+        <option >Win</option>
+    </datalist>
+
+    <form action="">
+
+        <label for="">Pesquisar pelo ID</label>
+        
+        <input type="search" name="q" list="items" placeholder="Digite seu termo" size="29" aria-label="Campo de pesquisa">
+        <button>Pesquisar</button>
+
+    </form>
+    -->
+    <form action="">
+
+        <input type="number" placeholder="Digite somente numeros">
+        <button>Enviar</button>
+
+    </form>
+    
+    
+
+</body>
+</html>

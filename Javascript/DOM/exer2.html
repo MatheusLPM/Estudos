@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somar numeros</title>
+
+    <style>
+
+        #res{
+            border: 1px solid red;
+            color: black;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font: 20px ;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Somando Valores</h1>
+
+    <input type="number" name="text1" id="text1"> +
+    <input type="number" name="text2" id="text2">
+    <button type="button" value="somar" onclick="somar()"> Somar</button>
+
+    <div id="res">Resultado</div>
+    
+    <script>
+
+        function somar(){
+            var tex1 = document.getElementById('text1')
+            var tex2 = document.getElementById('text2')
+            var res = document.getElementById('res')
+
+            var num1 = parseInt(tex1.value)
+            var num2 = parseInt(tex2.value)
+
+            var soma = num1 + num2
+
+            res.innerHTML = soma
+        }
+
+    </script>
+    
+</body>
+
+</html>

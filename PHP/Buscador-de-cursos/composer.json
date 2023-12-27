@@ -1,0 +1,49 @@
+{
+    "name": "matheus/buscador-cursos",
+    "description": "Projeto que busca cursos do site da alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Matheus Lourenco",
+            "email": "matheuslpm1gb@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.8",
+        "symfony/dom-crawler": "^6.3",
+        "symfony/css-selector": "^6.3"
+    },
+    "autoload": {
+        "classmap": [
+            "./Teste.php"
+        ],
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        },
+        "files": [
+           "./functions.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10",
+        "squizlabs/php_codesniffer": "*",
+        "phan/phan": "^5.4"
+    },
+    "scripts": {
+        "test": "phpunit src/Buscador.php",
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@cs",
+            "@test"
+        ],
+        "post-update-cmd": [
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificações do codigos phan, cs, Test"
+    }
+    
+}

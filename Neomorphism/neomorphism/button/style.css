@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+
+    --color-1: #E0E0E0;
+    --color-2: #CECECE;
+    --color-3: #c9c9c9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right,var(--color-1),white);
+    color: white;
+}
+
+#container{
+
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloco{
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0.3rem 0.3rem 1.5rem var(--color-2),
+    -1rem -1rem 1.4rem white;
+    /*border: 1px solid red;*/
+
+}
+
+button{
+
+    background: transparent;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    transition: 0.6s;
+    color: var(--color-3);
+
+}
+
+.botao-select{
+
+    box-shadow: inset 0.3rem 0.3rem 1.4rem #CECECE,
+    -0.7rem -0.7rem 1.4rem white;
+    color: rgb(69, 255, 69);
+    transition: 0.6s;
+
+}
+
+
+#bloco button:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+button svg{
+
+    width: 6rem;
+    height: 6rem;
+    pointer-events: none;
+}

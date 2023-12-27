@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+
+    --color-1: #E0E0E0;
+    --color-2: #CECECE;
+    --color-3: #c9c9c9;
+    --color-4: #38DF88;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right,var(--color-1),white);
+    color: white;
+}
+
+#container{
+
+    min-height: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+
+}
+
+#logo-container{
+
+    width: 50rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.7rem 0.7rem 1.5rem var(--color-2),
+    -0.7rem -0.7rem 1.5rem white;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+button{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    color: var(--color-3);
+
+}
+button:hover{
+    cursor: pointer;
+}
+
+svg{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 740px) {
+
+    #logo-container{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+  }

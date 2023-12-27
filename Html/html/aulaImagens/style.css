@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+/*
+header{
+    border: 7px dashed red;
+    height: 100px;
+    padding: 16px;
+
+    background-color: rgb(255,144,69);
+    background-image: url(html/unnamed.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: padding-box;
+    background-clip: padding-box
+}*/
+
+main{
+    color: purple;
+    padding: 8px;
+
+    /*
+    background-color: rgb(255,144,69);
+    background-image: url(html/unnamed.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: padding-box;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    */
+
+    background: linear-gradient(rgba(8, 5, 5, 0), rgba(255,0,0,0.2)), url(unnamed.jpg) no-repeat right top / 100px border-box fixed;
+    
+}

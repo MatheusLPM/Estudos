@@ -1,0 +1,12 @@
+#container{
+    border: 1px solid red;
+}
+
+
+#caixa{
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    justify-content: flex-end;
+}

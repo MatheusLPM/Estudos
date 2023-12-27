@@ -1,0 +1,668 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap');*/
+@font-face {
+    font-family: circular;
+    src: url(/fonts/CircularStd-Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    /*font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1rem;
+    overflow: hidden;
+    font-family: circular;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+li{
+    display: list-item;
+}
+
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+button {
+    background-color: #121212;
+    color: grey;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    color: white;
+}
+
+main {
+
+    background: #121212;
+    border-radius: 0.5rem ;
+    grid-area: bloco-3;
+    width: 100%;
+    min-width: 20rem;
+
+}
+
+main h2{
+
+    padding: 1.8rem;
+}
+
+footer{
+
+    background-color: black;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    margin: 0.5rem;
+
+}
+
+#rodape{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+#container{ 
+
+
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    'bloco-1 bloco-3'
+    'bloco-1 bloco-3';
+    margin: 0.5rem;
+    grid-template-columns: auto 1fr;
+    /*grid-template-rows: auto 1fr;*/
+    grid-template-rows: auto auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+#bloco-1{
+
+    font-size: 1em;
+    border-radius: 0.5em;
+    background-color: #121212;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    position: relative;
+}
+
+#start-search{
+
+    background: black;
+    border-radius: 0.5rem ;
+    grid-area: bloco-1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 26rem;
+    height: 90vh;
+    position: relative;
+
+
+}
+
+#start-search ul{
+    line-height: 2.5rem;
+
+}
+
+#start-search ul a {
+    display: block;
+
+
+}
+
+#start-search li {
+    padding-bottom: 0.5rem;
+}
+
+#start-search li a:hover{
+    color: white;
+}
+
+#bloco-2{
+
+    background: #121212;
+    border-radius: 0.5rem ;
+    grid-area: bloco-2;
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    position: relative;
+
+}
+#biblioteca{
+
+    background-color: #121212;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+    height: 7rem;
+
+}
+#biblioteca button{
+
+    background-color: transparent;
+    width: 10rem;
+    height: 4rem;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+}
+
+#your-library{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+#library{
+
+    margin-left: 1rem;
+}
+
+
+#biblioteca-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5rem;
+
+}
+#biblioteca-icon button{
+
+    padding: 1rem;
+    display: flex;
+    height: 1rem;
+    width: 1rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0.2rem;
+
+}
+#biblioteca-icon button:hover{
+    background-color: rgb(34, 32, 32); ;
+}
+
+#artist-playlist{
+    width: 12rem;
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+
+}
+
+#artist-playlist button{
+    background-color: #232323;
+    color: white;
+    border-radius: 2em;
+    width: 6em;
+    height: 3em;
+    margin-right: 0.5rem;
+
+}
+
+#artist-playlist button:hover{
+    background-color: #424242;
+}
+
+
+
+#playlist {
+
+
+    border-top: 1px solid black;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    overflow-y: scroll;
+    position: absolute;
+    height: 37.5em;
+    width: 100%;
+
+}
+#playlist li span{
+
+    color: white;
+    font-weight: bold;
+
+}
+
+.album-descricao p{
+    color: #A7A7A7;
+    font-size: 0.8em;
+    line-height: 1em;
+
+
+}
+
+main #navegar{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
+    height: 4rem;
+
+}
+
+#nav{
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    position: relative;
+
+}
+
+#nav-buttom{
+    margin-left: 1rem;
+
+}
+#nav-input i{
+    position: absolute; 
+    margin: 1.3rem 0rem 0rem 1rem;
+    color: #BDBDBD;
+
+}
+
+#nav-input i:hover{
+    color: white;
+}
+
+#nav input{
+
+    height: 3rem;
+    min-width: 10rem;
+    width: 23rem;
+    background-color: #232323;
+    border-radius: 2rem;
+    color: white;
+    padding-left: 2.5rem;
+    border: 1px solid #242424;
+    margin-top: 0.5rem;
+}
+
+#nav input:hover{
+    border: 1px solid grey;
+    background-color: #2b2a2a;
+    color: white;
+}
+
+#nav button{
+    background-color: #0A0A0A;
+    margin-top: 1rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+
+
+}
+
+#nav button:hover{
+    background-color: black;
+}
+
+#rescentes{
+
+    height: 3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+#rescentes button, a{
+    color: #B8B8B8;
+
+}
+
+#install-app{
+
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 12rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+
+}
+#install a{
+
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+
+
+}
+
+#user button {
+
+
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.4rem;
+
+
+}
+#user button:hover{
+    font-size: 1.05rem; 
+}
+
+#install a:hover{
+
+    font-size: 1.05rem;
+
+}
+
+#rescentes button{
+    margin: 0.5rem;
+    background-color: transparent;
+    font-size: 1em;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+#rescentes button:hover{
+    background-color: #232323 ;
+}
+
+
+
+#categorias{
+
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+    gap: 2em;
+    padding-left: 2em;
+    height: 44.5rem;
+    position: absolute;
+
+}
+
+#categorias span{
+
+    padding-left: 1rem;
+    font-family: url(/fonts/CircularStd-Medium.otf);
+    font-size: 1.5em;
+    font-weight: 900;
+
+}
+
+#categorias a {
+
+    color: white;
+
+}
+
+.genero{
+
+    line-height: 4em;
+    height: 11em;
+    width: 11em;
+    background-color: #E8115B;
+    border-radius: 0.5rem;
+    background-image: url(/assets/disc.png);
+    background-repeat: no-repeat;
+    background-size: 10em;
+    background-position: left 90px bottom -40px ;
+
+}
+
+#rodape-1{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    width: 30em;
+
+
+}
+
+#rodape-1 button{
+
+    margin-right: 0.5rem;
+}
+#rodape-1 a{
+
+    font-size: 0.8rem;
+    height: 1.5rem;
+
+}
+
+#rodape-info{
+
+    margin: 0.5rem;
+
+}
+
+#rodape button{
+    background-color: black;
+    color: #B3B3B3;
+
+}
+#rodape button:hover{
+
+    color: white;
+
+}
+
+
+#rodape-2{
+
+
+    background: black;
+    width: 40em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+#player-buttom{
+    margin-top: 0.2rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+}
+#player-buttom button{
+    font-size: 1.5rem;
+
+
+}
+
+#player-buttom .play{
+    font-size: 2rem;
+}
+
+
+#player-progress{
+
+    margin-top: 1rem;
+    height: 0.2rem;
+    width: 80%;
+    background-color: #424242;
+
+}
+
+#rodape-3{
+
+    background: black;
+
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    line-height: 4rem;
+
+}
+#rodape-3 button{
+
+    font-size: 1rem;
+    background-color: black;
+
+    margin-left: 0.5rem;
+
+}
+
+
+#volume-progress{
+    width: 6rem;
+    height: 0.2rem;
+    margin: 1.8rem;
+    background-color: white;
+
+
+}
+
+#resumo{
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+}
+
+#resumo a{
+    line-height: 2rem;
+    color: white;
+    display: block;
+    font-size: 1rem;
+
+}
+#resumo a:hover{
+    text-decoration: underline;
+
+}
+
+#resumo img{
+
+    border-radius: 0.5rem;
+    height: 4rem;
+    margin: 0.2rem;
+}
+#resumo p {
+
+    line-height: 4rem;
+}
+
+#resumo-artist a{
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: bold;
+}
+
+#resumo-artist a:hover{
+    color: white;
+}
+
+.albuns a{
+
+    font-weight: bold;
+    
+}
+
+.playlist-item{
+
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    gap: 0.5rem;
+
+
+}
+.album-descricao{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.album-capa{
+    margin: 0.4rem;
+}
+
+.albuns img{
+
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 0.5rem;
+
+}
+
+.albuns a:hover{
+    background: rgb(34, 32, 32);
+}
+
+.icon{
+    
+    font-size: 1.5em;
+    font-weight: bold;
+
+
+}
+
+.text{
+
+    font-weight: bold;
+    padding-left: 0.5rem;
+
+
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    opacity: 0%;
+}
+::-webkit-scrollbar-thumb {
+    background: 5px grey;
+}
